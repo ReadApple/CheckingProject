@@ -23,7 +23,7 @@ public class PropineTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(baseURL); 
-		
+		System.out.println("this is not TT");
 		System.out.println("Coming Apple ABC");
 	}
 
@@ -35,6 +35,7 @@ public class PropineTest {
 		WebElement SubmitButton = driver.findElement(By.xpath("//input[@class='btn btn-default']"));
 		SubmitButton.click();
 		System.out.println("Coming Apple ABC");
+		System.out.println("this is not TT");
 
 	}
 
