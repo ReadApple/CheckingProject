@@ -23,6 +23,8 @@ public class PropineTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(baseURL); 
+		
+		System.out.println("Coming Apple ABC");
 	}
 
 	@When("^I enter \"([^\"]*)\" on the input field and click Submit button$")
@@ -32,7 +34,7 @@ public class PropineTest {
 		strInputDate=Date;
 		WebElement SubmitButton = driver.findElement(By.xpath("//input[@class='btn btn-default']"));
 		SubmitButton.click();
-
+		System.out.println("Coming Apple ABC");
 
 	}
 
@@ -45,7 +47,7 @@ public class PropineTest {
 		 String arroldDate=arrstrDate[0];
 		 String oldDate=arroldDate.substring(4,arroldDate.length()-3).trim();
 
-
+		 System.out.println("Coming Apple ABC");
 		List<SimpleDateFormat> dateFormatList = new ArrayList<SimpleDateFormat>();
 
 		dateFormatList.add(new SimpleDateFormat("MM-dd-yyyy"));
